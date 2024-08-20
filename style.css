@@ -41,6 +41,25 @@
   background: rgb(255, 255, 255);
   background: linear-gradient(45deg, rgba(255, 255, 255, 1) 10%, rgba(103, 14, 13, 0.09149597338935578) 90%);
   border: 3px solid #670e0d;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.testimonial:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-bottom: none;
+  border-color: red;
+  transition: border 0.2s ease-in;
+}
+.testimonial:hover:before {
+  border-bottom: 200px solid rgba(255, 0, 0, 0.264);
+  border-radius: 50%;
+  filter: blur(2.5rem);
+  transform: scaleX(-10);
 }
 
 /* ONLY DEV */
