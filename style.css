@@ -1,0 +1,89 @@
+:root {
+  --video-width: 100vw;
+  --video-height: 100vh;
+
+  @media (min-aspect-ratio: 16/9) {
+    --video-height: 56.25vw;
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    --video-width: 177.78vh;
+  }
+}
+
+.bg-video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-video__iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--video-width);
+  height: var(--video-height);
+  transform: translate(-50%, -50%);
+}
+
+/*  */
+.col-md-4 {
+  gap: 1em;
+}
+
+.testimonial-video {
+  height: 550px;
+  flex-grow: 1;
+}
+
+.testimonial {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(45deg, rgba(255, 255, 255, 1) 10%, rgba(103, 14, 13, 0.09149597338935578) 90%);
+  border: 3px solid #670e0d;
+}
+
+/* ONLY DEV */
+.fa-lg {
+  font-size: 1.33333333em !important;
+}
+
+.fa-1x {
+  font-size: 1.5em !important;
+}
+
+.fa-2x {
+  font-size: 2em !important;
+}
+
+.fa-3x {
+  font-size: 3em !important;
+}
+
+.fa-4x {
+  font-size: 4em !important;
+}
+
+.fa-5x {
+  font-size: 5em !important;
+}
+
+.fa-6x {
+  font-size: 6em !important;
+}
+
+.fa-7x {
+  font-size: 7em !important;
+}
+
+.fa-8x {
+  font-size: 8em !important;
+}
+
+.fa-9x {
+  font-size: 9em !important;
+}
+
+.fa-10x {
+  font-size: 10em !important;
+}
