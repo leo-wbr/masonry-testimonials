@@ -50,12 +50,10 @@
   transition: transform 0.4s ease-in, scale 0.15s ease-in-out, box-shadow 0.2s ease-in !important;
 }
 
-.testimonial {
-  transform: translateY(-0.5em);
-}
 .testimonial:hover {
   scale: 0.97;
   box-shadow: 0px 10px 10px var(--event-color-primary) !important;
+  transform: translateY(-0.5em);
 }
 
 .testimonial:before {
