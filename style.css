@@ -1,11 +1,9 @@
 :root {
   --event-color-primary: #670e0d !important;
   --event-color-secondary: #f27925 !important;
-
-  /*  */
-  --video-col-height: 650px;
   --video-width: 100vw;
   --video-height: 100vh;
+  --video-col-height: 500px;
 
   @media (min-aspect-ratio: 16/9) {
     --video-height: 56.25vw;
@@ -35,6 +33,10 @@
 .masonry .video {
   height: var(--video-col-height);
   flex-grow: 1;
+}
+
+.masonry .video:first-child {
+  height: calc(var(--video-col-height) * 1.65);
 }
 
 .masonry .testimonial {
